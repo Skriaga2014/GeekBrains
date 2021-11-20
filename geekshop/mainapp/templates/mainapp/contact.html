@@ -1,20 +1,21 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Контакты</title>
-	<link rel="stylesheet" type="text/css" href="/static/css/style.css">
-	<link rel="stylesheet" href="/static/fonts/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'fonts/font-awesome/css/font-awesome.css' %}">
 </head>
 <body>
 	<div class="container">
 		<div class="hero">
 			<div class="header clearfix">
-				<a href="../" class="logo"></a>
+				<a href="" class="logo"></a>
 				<ul class="menu">
-					<li><a href="../">домой</a></li>
-					<li><a href="../products/">продукты</a></li>
-					<li><a href="../contact/" class="active">контакты</a></li>
+					<li><a href="{% url 'home' %}">домой</a></li>
+					<li><a href="{% url 'products' %}">продукты</a></li>
+					<li><a href="{% url 'contacts' %}" class="active">контакты</a></li>
 				</ul>
 				<a href="#" class="search"></a>
                 <a href="#" class="basket"></a>
