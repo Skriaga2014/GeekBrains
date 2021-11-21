@@ -893,7 +893,7 @@ td:first-child {
 	padding-left: 98px;
 	padding-right: 98px;
 	margin-top: 98px;
-	height: 651px; 
+	height: 250px;
 }
 .details-slider {
 	width: 570px;
@@ -902,7 +902,7 @@ td:first-child {
 }
 .slider-product {
 	width: 570px;
-	height: 570px;
+	height: 200px;
 }
 .slider-control {
 	width: 420px;

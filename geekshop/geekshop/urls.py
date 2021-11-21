@@ -34,5 +34,6 @@ urlpatterns = [
     path('', mainapp.main, name='home'),
     path('products/', mainapp.products, name='products'),
     path('contact/', mainapp.contact, name='contacts'),
+    path('test/', mainapp.test, name='test'),
     path('admin/', admin.site.urls),
 ]
