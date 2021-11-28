@@ -1,12 +1,25 @@
 from django.shortcuts import render
-
+from .models import ProductCategory, Product
+import random as rnd
 
 def main(request):
-    return render(request, 'mainapp/index.html', context)
+    title = 'Главная'
+    products = Product.objects.all()[:4]
+
+    content = {'title': title, 'products': products}
+
+    return render(request, 'mainapp/index.html', content)
 
 
 def products(request):
-    return render(request, 'mainapp/products.html', context)
+    title = 'Продукция'
+    products = Product.objects.all()
+    products_sample = Product.objects.all()[:3]
+    #rnd.shuffle(products_sample)
+
+    content = {'title': title, 'products': products, 'products_sample': products_sample}
+
+    return render(request, 'mainapp/products.html', content)
 
 
 def contact(request):

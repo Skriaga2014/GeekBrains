@@ -13,7 +13,7 @@
 				<a href="{% url 'home' %}" class="logo"></a>
 				<ul class="menu">
 					<li><a href="{% url 'home' %}">домой</a></li>
-					<li><a href="{% url 'products' %}" class="active">продукты</a></li>
+					<li><a href="{% url 'products:index' %}" class="active">продукты</a></li>
 					<li><a href="{% url 'contacts' %}">контакты</a></li>
 
 				</ul>
@@ -37,7 +37,7 @@
 			<div class="details-products">
 				<div class="details-slider">
 					<div class="slider-product">
-						<img src="{% static product.img %}">
+						<img src="/media/{{ product.image }}">
 					</div>
 				</div>
 
@@ -61,11 +61,10 @@
 					<a class="explore" href="#">показать все <img src="{% static 'img/arrow.png' %}" alt=""></a>
 				</div>
 				<div class="related-products clearfix">
-					{% for product in products %}
+					{% for product in products_sample %}
 					<div class="block">
-						<a href="#"><img src="{% static product.img %}" alt="">
+						<a href="#"><img src="/media/{{ product.image }}" alt="">
 							<div class="text">
-								<img src="{% static 'img/icon-hover.png' %}" alt="img">
 								<h4>{{product.name}}</h4>
 								<p>{{product.notice}}</p>
 							</div>
