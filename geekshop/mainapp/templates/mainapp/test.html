@@ -1,0 +1,6 @@
+{% load static %}
+
+{% for product in products %}
+    <p>{{ product.name }}</p>
+    <img src='{% static product.img %}'>
+{% endfor %}

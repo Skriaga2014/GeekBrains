@@ -696,7 +696,10 @@ td:first-child {
 
 .hero {
 	background-color: #f5f5f5;
+	background-image: url(../img/contacts.jpg);
+	background-position: top;
 	height: 360px;
+
 	padding-left: 98px;
 	padding-right: 211px;
 	position: relative;
@@ -708,6 +711,7 @@ td:first-child {
 	text-align: left;
 	margin-top: 142px;
 	text-transform: uppercase;
+	padding-top: 60px;
 	/*text-transform: capitalize;*/
 }
 
@@ -893,7 +897,7 @@ td:first-child {
 	padding-left: 98px;
 	padding-right: 98px;
 	margin-top: 98px;
-	height: 651px; 
+	height: 400px;
 }
 .details-slider {
 	width: 570px;
@@ -902,7 +906,7 @@ td:first-child {
 }
 .slider-product {
 	width: 570px;
-	height: 570px;
+	height: 200px;
 }
 .slider-control {
 	width: 420px;
@@ -956,8 +960,9 @@ td:first-child {
 	margin-bottom: 36px;
 }
 .description .price {
+	padding-top: 10px;
 	color:  #212121;
-	font-size: 72px;
+	font-size: 60px;
 	font-weight: 300;
 	line-height: 48px;
 	text-align: center;
@@ -1040,8 +1045,9 @@ td:first-child {
 }
 .related-products a .text {
 	display: none;
-	height: 368px;
-	width: 368px;
+	padding-top: 10px;
+	height: 260px;
+	width: 260px;
 	background-color: #ffffff;
     opacity: 0.9;
     position: absolute;
@@ -1069,4 +1075,10 @@ td:first-child {
 }
 .related-products a:hover .text{
 	display: block;
+}
+
+.block img {
+	width:250px;
+	height:250px;
+	padding-top:20px;
 }
